@@ -1,3 +1,9 @@
+spirv-llvm-translator-14 (14.0.0-8deepin) unstable; urgency=medium
+
+  * Relax gcc dependency from 13 to 11.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Tue, 08 Aug 2023 16:25:26 +0800
+
 spirv-llvm-translator-14 (14.0.0-8) unstable; urgency=medium
 
   [ Gianfranco Costamagna ]

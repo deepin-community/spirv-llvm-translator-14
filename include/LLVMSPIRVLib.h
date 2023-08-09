@@ -46,8 +46,6 @@
 #include <iostream>
 #include <string>
 
-#pragma GCC visibility push(default)
-
 namespace llvm {
 // Pass initialization functions need to be declared before inclusion of
 // PassSupport.h.
@@ -71,11 +69,7 @@ class ModulePass;
 class FunctionPass;
 } // namespace llvm
 
-#pragma GCC visibility pop
-
 #include "llvm/IR/Module.h"
-
-#pragma GCC visibility push(default)
 
 namespace SPIRV {
 
@@ -229,7 +223,5 @@ FunctionPass *createSPIRVLowerBitCastToNonStandardTypeLegacy(
     const SPIRV::TranslatorOpts &Opts);
 
 } // namespace llvm
-
-#pragma GCC visibility pop
 
 #endif // SPIRV_H

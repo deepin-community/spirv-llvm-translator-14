@@ -48,8 +48,6 @@
 #include <map>
 #include <unordered_map>
 
-#pragma GCC visibility push(default)
-
 namespace llvm {
 class IntrinsicInst;
 } // namespace llvm
@@ -226,7 +224,5 @@ private:
 };
 
 } // namespace SPIRV
-
-#pragma GCC visibility pop
 
 #endif // SPIRV_LLVMSPIRVOPTS_H

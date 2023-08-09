@@ -2120,7 +2120,6 @@ bool isSpirvBinary(const std::string &Img) {
 
 #ifdef _SPIRV_SUPPORT_TEXT_FMT
 
-__attribute__ ((visibility ("default")))
 bool convertSpirv(std::istream &IS, std::ostream &OS, std::string &ErrMsg,
                   bool FromText, bool ToText) {
   auto SaveOpt = SPIRVUseTextFormat;
@@ -2157,7 +2156,6 @@ bool isSpirvText(const std::string &Img) {
   return Magic == MagicNumber;
 }
 
-__attribute__ ((visibility ("default")))
 bool convertSpirv(std::string &Input, std::string &Out, std::string &ErrMsg,
                   bool ToText) {
   auto FromText = isSpirvText(Input);

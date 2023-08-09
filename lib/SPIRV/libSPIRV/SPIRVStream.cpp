@@ -81,7 +81,6 @@ static void readQuotedString(std::istream &IS, std::string &Str) {
 }
 
 #ifdef _SPIRV_SUPPORT_TEXT_FMT
-__attribute__ ((visibility ("default")))
 bool SPIRVUseTextFormat = false;
 #endif
 
